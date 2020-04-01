@@ -1,0 +1,652 @@
+{% load static %}
+
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8">
+<title>| Dylan Pereira | </title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<!-- All Animations CSS -->
+<link href="{% static "css/animate.css" %}" rel="stylesheet" type="text/css">
+<!-- Image Lightbox CSS-->
+<link rel="stylesheet" href="{% static "css/imagelightbox.css" %}" type="text/css" media="screen">
+<!-- Theme styles and Menu styles -->
+<link href="{% static "css/style.css" %}" rel="stylesheet" type="text/css">
+<link href="{% static "css/mainmenu.css" %}" rel="stylesheet" type="text/css">
+<!-- Call Fontawsome Icon Font from a CDN -->
+<link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+
+<!--FlexSlider -->
+<link rel="stylesheet" href="{% static "js/woothemes-FlexSlider-06b12f8/flexslider.css" %}" type="text/css" media="screen">
+<!--Isotope Plugin -->
+<link rel="stylesheet" href="{% static "js/isotope/css/style.css" %}" type="text/css" media="screen">
+<!--Simple Text Rotator -->
+<link href="{% static "css/simpletextrotator.css" %}" rel="stylesheet" type="text/css">
+
+<!--Modernizer Custom -->
+<script type="text/javascript" src={% static "js/modernizr.custom.48287.js" %}></script>
+<!-- Fav and touch icons -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="apple-touch-fa-57x57-precomposed.png">
+<link rel="shortcut icon" href="favicon.png">
+</head>
+<body class="sticky_header">
+<div class="overflow_wrapper">
+     <header class="centered">
+          <div class="container">
+     <div class="logo"><a class="brand" href="#"> <img src="{% static "images/cleanstart_logo.png" %}" alt="optional logo"> <span class="logo_title">Dylan Pereira</span></a></div>
+
+               <!-- MAIN MENU -->
+
+               <div id="mainmenu" class="menu_container">
+                    <label class="mobile_collapser">MENU</label>
+                    <!-- Mobile menu title -->
+                    <ul>
+                         <li class="active"><a href="#">Home</a></li>
+                         <li><a href="#about">About Me</a></li>
+                         <li><a href="#skills">Skills</a></li>
+                        
+                         <li><a href="#portfolio">Portfolio</a></li>
+                       
+                         <!--<li><a href="blog.html">Blog</a></li> -->
+                         <li><a href="#contact">Contact Me</a></li>
+                         <!-- MEGA DROPDOWN -->
+                        <!-- <li><a href="#">Features</a>
+                              <div class="dmui_dropdown_block full_width" style="background-image: url(images/mega_menu_background.png); background-repeat:no-repeat; background-position:right;">
+                                   <div class="dmui-container">
+                                        <div class="dmui-col span3">
+                                             <div class="dmui-container">
+                                                  <ul class="dmui-submenu">
+                                                       <li><a href="home_alternative.html">Home Alternative</a></li>
+                                                       <li><a href="page_alternative.html">Page Alternative</a></li>
+                                                       <li><a href="gallery.html">Masonry Gallery</a></li>
+                                                       <li><a href="portfolio_item.html">Portfolio Item</a></li>
+                                                       <li><a href="portfolio_item_2.html">Portfolio Item II</a></li>
+                                                  </ul>
+                                             </div>
+                                        </div>
+                                        <div class="dmui-col span3">
+                                             <div class="dmui-container">
+                                                  <ul class="dmui-submenu">
+                                                       <li><a href="single_post.html">Single Post</a></li>
+                                                       <li><a href="404.html">ERROR 404</a></li>
+                                                       <li><a href="register.html">Register or Sign in</a></li>
+                                                       <li><a href="elements.html">Design  Elements</a></li>
+                                                       <li><a href="documentation/index.html">Documentation <span class="label label-danger">new</span></a></li>
+                                                  </ul>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                         </li> -->
+                         <!-- /MEGA DROPDOWN -->
+                    </ul>
+               </div>
+
+               <!-- /MAIN MENU -->
+
+               <div class="triangle-up-left"></div>
+               <div class="triangle-up-right"></div>
+          </div>
+     </header>
+     <section id="slider_wrapper" class="slider_wrapper full_page_photo">
+     <div style="width: 100%;height:100%;"
+          data-vide-bg="mp4: {% static "images/portfolio/sky.mp4" %}, webm: {% static "images/portfolio/sky.webm" %}, poster:{% static "images/Ducks.png" %}"
+          data-vide-options="posterType: png, loop: true, muted: true, position: 0% 0%">
+          </div>
+
+          <div id="main_flexslider" class="flexslider">
+               <ul class="slides">
+                    <li class="item" style="background-image: url({% static "images/1.jpg" %})">
+                         <div class="container">
+                              <div class="carousel-caption animated bounceInUp">
+                                   <h1>A <strong>flexible</strong> theme<br>
+                                        you can trust &amp; build upon!</h1>
+                                   <p class="lead skincolored">Cleanstart is based on fine typography and large photography,<br>
+                                        serving as a foundation for your creative projects. </p>
+                              </div>
+                         </div>
+                    </li>
+                    <li class="item" style="background-image: url({% static "images/2.jpg" %})">
+                         <div class="container">
+                              <div class="carousel-caption animated bounceInUp">
+                                   <h1>Makes real use<br>
+                                        of the <strong>powerful</strong> {less} syntax!</h1>
+                                   <p class="lead skincolored">Cleanstart was built with heavy use of {less} technology, <br>
+                                        making the life of the web developer easier!</p>
+                              </div>
+                         </div>
+                    </li>
+                    <li class="item" style="background-image: url({% static "images/3.jpg" %})">
+                         <div class="container">
+                              <div class="carousel-caption animated bounceInUp">
+                                   <h1>Utilizes subtle animations<br>
+                                        to serve a <strong>minimal</strong> approach</h1>
+                                   <p class="lead skincolored">Cleanstart is designed to mainly promote your content<br>
+                                        in a simple yet exciting & elegant way</p>
+                              </div>
+                         </div>
+                    </li>
+               </ul>
+          </div>
+     </section>
+     <div class="main">
+               <div class="container triangles-of-section">
+               <div class="triangle-up-left"></div>
+               <div class="square-left"></div>
+               <div class="triangle-up-right"></div>
+               <div class="square-right"></div>
+          </div> 
+
+
+          <!-- ABOUT ME SECTION-->
+
+          <section class="horizontal_teaser" id="about">
+               <div class="container">
+                    <div class="row">
+                         <div class="col-sm-12 col-md-4 horizontal_teaser_left">
+                              <h3>A Little About Me</h3>
+                              <p> I am a Full Stack developer. I am familiar with HTML, CSS, JavaScript, React. </p>
+                              <p> I have 5+ years experience in IT support. I am certified as a RHCE and CCNP Security.
+                         </div>
+                         <div class="col-sm-12 col-md-8 col-lg-6 horizontal_teaser_right ">
+                              <img src={% static "images/portfolio/About_Who_We_Are.png" %}  alt="pic of a computer with web design">
+                              {% comment %} <iframe class="video_iframe" src="http://player.vimeo.com/video/71409522?title=0&amp;byline=0&amp;portrait=0"></iframe> {% endcomment %}
+                         </div>
+                    </div>
+               </div>
+          </section>
+
+         
+
+          <section class="parallax call_to_action dark_section" style="background-image:url({% static "images/parallax.jpg" %})">
+               <div class="overlay">
+                    <h3> I Like code that is  <strong><span class="rotate">Clear, Commented, Indented</span></strong></h3>
+                    <h4>and  make the web a little bit  prettier</h4>
+
+          </section>
+
+          <!-- SKILLS -->
+
+          <section class="portfolio_teasers_wrapper" id="skills">
+               <div class="container triangles-of-section">
+                    <div class="triangle-up-left"></div>
+                    <div class="square-left"></div>
+                    <div class="triangle-up-right"></div>
+                    <div class="square-right"></div>
+               </div>
+               <div class="container">
+                    
+                    <h2 class="section_header elegant centered"><b>SKILLS</b><small> A List of skills I recently learned</small></h2>
+                    <div class="portfolio_strict row">
+                         <div class="col-sm-4 col-md-4">
+                              <div class="portfolio_item wow fadeInUp"> <a href="#skills">
+                                   <figure style="background-size: 190px 200px;background-image:url({% static "images/portfolio/html5_new.png" %});">
+                                        <figcaption>
+                                             <div class="portfolio_description">
+                                                  <h3>HTML5</h3>
+                                                  
+                                             </div>
+                                        </figcaption>
+                                   </figure>
+                                   </a> </div>
+                         </div>
+                         <div class="col-sm-4 col-md-4">
+                              <div class="portfolio_item wow fadeInUp"> <a href="#skills">
+                                   <figure style="background-size: 320px 200px; background-image:url({% static "images/portfolio/css3.svg" %});">
+                                        <figcaption>
+                                             <div class="portfolio_description">
+                                                  <h3>CSS3</h3>
+                                                  
+                                                  <p>The Styling language</p>
+                                             </div>
+                                        </figcaption>
+                                   </figure>
+                                   </a> </div>
+                         </div>
+                         <div class="col-sm-4 col-md-4">
+                              <div class="portfolio_item wow fadeInUp"> <a href="#skills">
+                                   <figure style="background-size: 320px 200px; background-image:url({% static "images/portfolio/javascript-4.svg" %});">
+                                        <figcaption>
+                                             <div class="portfolio_description">
+                                                  <h3>JavaScript</h3>
+                                                  <p> The Web runs on JavaScript. The most used language
+                                                  on the web</p>
+                                                  
+                                             </div>
+                                        </figcaption>
+                                   </figure>
+                                   </a> </div>
+                         </div>
+
+                          <div class="col-sm-4 col-md-4">
+                              <div class="portfolio_item wow fadeInUp"> <a href="#skills">
+                                   <figure style="background-size: 320px 200px;background-image:url({% static "images/portfolio/react-1.svg" %})">
+                                        <figcaption>
+                                             <div class="portfolio_description">
+                                                  <h3> React</h3>
+                                                  
+                                             </div>
+                                        </figcaption>
+                                   </figure>
+                                   </a> </div>
+                         </div>
+
+                          <div class="col-sm-4 col-md-4">
+                              <div class="portfolio_item wow fadeInUp"> <a href="#skills">
+                                   <figure style="background-size: 320px 200px;background-image:url({% static "images/portfolio/jquery-1.svg" %})">
+                                        <figcaption>
+                                             <div class="portfolio_description">
+                                                  <h3>JQuery</h3>
+                                                  
+                                             </div>
+                                        </figcaption>
+                                   </figure>
+                                   </a> </div>
+                         </div>
+
+                         <div class="col-sm-4 col-md-4">
+                              <div class="portfolio_item wow fadeInUp"> <a href="#skills">
+                                   <figure style="background-size: 220px 100px;background-image:url({% static "images/portfolio/sass-1.svg" %})">
+                                        <figcaption>
+                                             <div class="portfolio_description">
+                                                  <h3>Sass</h3>
+                                                  <p>A pre-processing language for CSS</p>
+                                                  
+                                             </div>
+                                        </figcaption>
+                                   </figure>
+                                   </a> </div>
+                         </div>
+
+                         <div class="col-sm-4 col-md-4">
+                              <div class="portfolio_item wow fadeInUp"> <a href="#skills">
+                                   <figure style="background-size: 220px 200px;background-image:url({% static "images/portfolio/django.svg" %})">
+                                        <figcaption>
+                                             <div class="portfolio_description">
+                                                  <h3>Django</h3>
+                                                  <p>Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design.
+                                                  - The Django Project</p>
+                                                  
+                                             </div>
+                                        </figcaption>
+                                   </figure>
+                                   </a> </div>
+                         </div>
+
+                         <div class="col-sm-4 col-md-4">
+                              <div class="portfolio_item wow fadeInUp"> <a href="#skills">
+                                   <figure style="background-size: 220px 200px;background-image:url({% static "images/portfolio/git.svg" %})">
+                                        <figcaption>
+                                             <div class="portfolio_description">
+                                                  <h3>Git</h3>
+                                                  <p>Software versioning Control</p>
+                                                  
+                                             </div>
+                                        </figcaption>
+                                   </figure>
+                                   </a> </div>
+                         </div>
+
+
+                    </div>
+               </div>
+               
+          </section>
+
+
+
+ <!-- PORTFOLIO SECTION WITH FILTERS -->
+
+ <h2 class="section_header elegant centered" id="portfolio"><b>PORTFOLIO</b><small> A List of Projects I recently created</small></h2>
+
+          <section class="portfolio_strict" >
+               <div class="container">
+                    <ul class="portfolio_filters">
+                         <li><a href="#" data-filter="*">show all</a></li>
+                         <li><a href="#" data-filter=".cat_html">HTML</a></li>
+                         <li><a href="#" data-filter=".cat_css">CSS</a></li>
+                         <li><a href="#" data-filter=".cat_javascript">JAVASCRIPT</a></li>
+                         <li><a href="#" data-filter=".cat_react">REACT</a></li>
+                         <li><a href="#" data-filter=".cat_jquery">JQUERY</a></li>
+                         <li><a href="#" data-filter=".cat_sass">SASS</a></li>
+                    </ul>
+                    <div class="row isotope_portfolio_container">
+                         <div class="cat_html col-xs-12 col-sm-6 col-md-4 col-lg-4">
+
+                              <div class="portfolio_item"> <a href="https://dylan814.github.io/dylan_repo/">
+                                   <figure style="background-image:url({% static "images/portfolio/portfolio1.png" %})">
+                                        <figcaption>
+                                             <div class="portfolio_description">
+                                                  <h3>In my first project, I showcased my HTML skills and adding links to 
+                                                  the page and creating background images for the banner</h3>
+                                                  <p>Clicking on the link takes you to the Live website</p>
+                                             </div>
+                                             
+                                        </figcaption>
+                                        
+                                   </figure>
+                                   
+                                   </a></div>
+                                   <div class="centered_button"><a class="btn btn-primary" href="https://github.com/dylan814/dylan_repo">See Code on GitHub</a></div>
+
+                         </div>
+                         
+
+
+                         <div class="cat_css col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                              <div class="portfolio_item"> <a href="https://dylan814.github.io/responsive_layout/">
+                                   <figure style="background-image:url({% static "images/portfolio/portfolio2.png" %})">
+                                        <figcaption>
+                                             <div class="portfolio_description">
+                                                  <h3>On this project, I learned the use of media queries for
+                                                  different viewports and different devices using css
+                                                  and created a single page responsive design</h3>
+                                                  
+                                                  <p>Clicking on the link takes you to the Live website</p>
+                                             </div>
+                                        </figcaption>
+                                   </figure>
+                                   </a> </div>
+                                   <div class="centered_button"><a class="btn btn-primary" href="https://github.com/dylan814/responsive_layout">See Code on GitHub</a></div>
+                         </div>
+
+
+
+                         <div class="cat_html col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                              <div class="portfolio_item"> <a href="https://dylan814.github.io/forms">
+                                   <figure style="background-image:url({% static "images/portfolio/portfolio3.png" %})">
+                                        <figcaption>
+                                             <div class="portfolio_description">
+                                                  <h3>Online Registration form</h3>
+                                                  <h3>This project features a mobile-friendly registration form using
+                                                  a wide variety of HTML form input types and attributes. No Framework like 
+                                                  Bootstrap was used to implement this project</h3>
+                                                  <p>Clicking on the link takes you to the live website.</p>
+                                             </div>
+                                        </figcaption>
+                                   </figure>
+                                   </a> </div>
+                                   <div class="centered_button"><a class="btn btn-primary" href="https://github.com/dylan814/forms">See Code on GitHub</a></div>
+                         </div>
+
+
+                         <div class="cat_sass col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                              <div class="portfolio_item"> <a href="https://dylan814.github.io/style_guide/">
+                                   <figure style="background-image:url({% static "images/portfolio/portfolio4.png" %})">
+                                        <figcaption>
+                                             <div class="portfolio_description">
+                                                  <h3>Style Guide</h3>
+                                                  <h3> On this project, I made use of a styling pre-processor called Sass to create
+                                                  a single page style guide </h3>
+                                                  <p>Clicking on the link takes you to the live website.</p>
+                                             </div>
+                                        </figcaption>
+                                   </figure>
+                                   </a> </div>
+                                   <div class="centered_button"><a class="btn btn-primary" href="https://github.com/dylan814/style_guide">See Code on GitHub</a></div>
+                         </div>
+
+
+
+                         <div class="cat_jquery col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                              <div class="portfolio_item"> <a href="https://dylan814.github.io/photo_gallery/">
+                                   <figure style="background-image:url({% static "images/portfolio/portfolio5.png" %})">
+                                        <figcaption>
+                                             <div class="portfolio_description">
+                                                  <h3>Using flex-box to layout this webpage, it's naturally responsive and looks great on any device. 
+                                                  I've also used Jquery plugins to add functionality to this project by giving the user an option to filter through all the photos through their search results. Give this a try!</h3>
+                                                  
+                                                  <p>Clicking on the link takes you to the live website.</p>
+                                             </div>
+                                        </figcaption>
+                                   </figure>
+                                   </a> </div>
+                                   <div class="centered_button"><a class="btn btn-primary" href="https://github.com/dylan814/photo_gallery">See Code on GitHub</a></div>
+                         </div>
+
+
+                         <div class="cat_react col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                              <div class="portfolio_item"> <a href="https://dylan814.github.io/the_game_show/">
+                                   <figure style="background-image:url({% static "images/portfolio/portfolio6.png" %})">
+                                        <figcaption>
+                                             <div class="portfolio_description">
+                                                  <h3>In this fun JavaScript game, I used the React library to create a fun interactive
+                                                  word game. The game was designed using components and states to trigger to different 
+                                                  actions within the program. I also made use of plenty of ES6 features. </h3>
+                                                  
+                                                  <p>Clicking on the link takes you to the live website.</p>
+                                             </div>
+                                        </figcaption>
+                                   </figure>
+                                   </a> </div>
+                                   <div class="centered_button"><a class="btn btn-primary" href="https://github.com/dylan814/the_game_show">See Code on GitHub</a></div>
+                         </div>
+
+
+                         <div class="cat_javascript col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                              <div class="portfolio_item"> <a href="https://dylan814.github.io/web_app_dashboard_v3.1/">
+                                   <figure style="background-image:url({% static "images/portfolio/portfolio7.png" %})">
+                                        <figcaption>
+                                             <div class="portfolio_description">
+                                                  <h3>With this fully responsive dashboard, I've created a space for users to see their social media traffic, statistics, and user activity. I have achieved the layout for this dashboard by using CSS grid. 
+                                                  Taking a mobile-first approach with this project, I used vanilla javascript.
+                                                  </h3>
+                              
+                                                  <p>Clicking on the link takes you to the live website.</p>
+                                             </div>
+                                        </figcaption>
+                                   </figure>
+                                   </a> </div>
+                                   <div class="centered_button"><a class="btn btn-primary" href="https://github.com/dylan814/web_app_dashboard_v3.1">See Code on GitHub</a></div>
+                         </div>
+
+
+                         <div class="cat_javascript col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                              <div class="portfolio_item"> <a href="https://dylan814.github.io/employee_directory/">
+                                   <figure style="background-image:url({% static "images/portfolio/portfolio8.png" %})">
+                                        <figcaption>
+                                             <div class="portfolio_description">
+                                                  <h3>Many sites — Twitter, Facebook, IMDB, and Wikipedia to name a few — offer a vast sea of data that you can access and display on your own web pages. Using JavaScript, 
+                                                  I've created an employee directory by communicating with a third-party API</h3>
+                                                  
+                                                  <p>Clicking on the link takes you to the live website</p>
+                                             </div>
+                                        </figcaption>
+                                   </figure>
+                                   </a> </div>
+                                   <div class="centered_button"><a class="btn btn-primary" href="https://github.com/dylan814/employee_directory">See Code on GitHub</a></div>
+                         </div>
+
+
+
+                         
+                         
+                    </div>
+               </div>
+          </section>
+          
+
+          <!-- TWITTER FEED SECTION -->
+
+          <!-- <section class="twitter_feed_wrapper skincolored_section">
+               <div class="container">
+                    <div class="row">
+                         <div class="twitter_feed_icon wow fadeInDown"><a href="https://twitter.com/PlethoraThemes"><i class="fa fa-twitter"></i></a></div>
+                         <div id="twitter_flexslider" class="flexslider">
+                         
+                         {% for tweet in public_tweets %}
+                              <p>{{ tweet.text }}</p>
+                         {% endfor %}
+                         
+                         </div>
+                    </div>
+               </div>
+          </section> -->
+
+          <!-- /TWITTER FEED SECTION -->
+          
+ 
+
+<br>
+<br>
+<br>
+<br>
+          <footer>
+                <section class="footer_teasers_wrapper dark_section">
+                    <div class="container triangles-of-section">
+                         <div class="triangle-up-left"></div>
+                         <div class="square-left"></div>
+                         <div class="triangle-up-right"></div>
+                         <div class="square-right"></div>
+                    </div> 
+
+          
+
+                    
+                         <!-- CONTACT CARD -->
+
+                         {% comment %} <div class="office_address col-sm-6 col-md-4">
+                              <div class="team_member"> 
+                                   <img src={% static "images/plethora_logo.png" %}  alt="logo">
+                                   <h5>PLETHORA THEMES</h5>
+                                   <small>Web-Development Company</small><br>
+                                   <address>
+                                   795 Folsom Ave, Suite 600<br>
+                                   San Francisco, CA 94107<br>
+                                   </address>
+                                   <abbr title="Phone">P:</abbr> (123) 456-7890<br>
+                                   <abbr title="Email">E:</abbr> <a href="mailto:#">first.last@example.com</a> 
+                              </div>
+                         </div>  {% endcomment %}
+
+                         <!-- /CONTACT CARD -->
+
+                         <!-- CONTACT FORM -->
+
+                         <div class="contact_form col-sm-6 col-md-12 skincolored" id="contact">
+                              <h1 style="text-align: center;"> Contact me </h1>
+                              <br>
+                              <br>
+                              <form name="contact_form" id="contact_form" method="post">
+                                   {{ form.non_field_errors }}
+                                   {% csrf_token %}
+                                 
+                                   <div class="row">
+                                        <div class="col-sm-6 col-md-6">
+                           
+                                             <label>Name</label>
+                                             {{form.name}}
+                                             {% comment %} <input name="name" id="name" class="form-control" type="text" value=""> {% endcomment %}
+                                        </div>
+                                        <div class="col-sm-6 col-md-6">
+                                             <label>E-mail</label>
+                                             {% comment %} <input name="email" id="email" class="form-control" type="text" value=""> {% endcomment %}
+                                             {{form.email}}
+                                        </div>
+                                   </div>
+                                   <div class="row">
+                                        <div class="col-sm-12 col-md-12">
+                                             <label>Subject</label>
+                                             {% comment %} <input name="subject" id="subject" class="form-control" type="text"> {% endcomment %}
+                                             
+                                             {{form.subject}}          
+                                                                     
+                                        </div>
+                                   </div>
+                                       <div class="row">
+                                         <div class="col-sm-12 col-md-12">
+                                             <label>Message</label>
+                                             <textarea name="message" id="message" rows="8" class="form-control"></textarea>
+                                        </div>
+                                        <div class="col-sm-12 col-md-12">
+                                             {% comment %} <a id="submit_btn" class="btn btn-primary" name="submit">Submit Message</a> <span id="notice" class="alert alert-warning alert-dismissable hidden" style="margin-left:20px;"></span> </div> {% endcomment %}
+                                             <button id="submit_btn" class="btn btn-primary" type="submit" name="submit">Submit Message </button>
+                                   </div>
+                              </form>
+                         </div>
+
+                         <!-- / CONTACT FORM -->
+
+                    {% comment %} <div class="container">
+                         <div class="row">
+                              <div class="footer_teaser pl_about_us_widget col-sm-4 col-md-4">
+                                   <h3>Contact Details</h3>
+                                   <p>PLETHORA THEMES <small>Web-Development Company</small><br>
+                                        795 Folsom Ave, Suite 600, San Francisco, CA 94107</p>
+                                   <p><i class="fa fa-envelope"></i> contact@example.com</p>
+                                   <p><i class="fa fa-phone"></i> (+30) 265-9987</p>
+                                   <div class="footer_social">
+                                        <div class="social_wrapper"><a href="https://www.facebook.com/plethorathemes"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-youtube"></i></a> <a href="#googleplus"><i class="fa fa-google-plus"></i></a></div>
+                                   </div>
+                              </div>
+                              <div class="footer_teaser pl_latest_news_widget col-sm-4 col-md-4">
+                                   <h3>Latest News</h3>
+                                   <ul class="media-list">
+                                        <li class="media"> <a href="#" class="media-photo" style="background-image:url(images/portfolio/t5-thumb.jpg)"></a> <a href="#" class="media-date">19<span>FEB</span></a>
+                                             <h5 class="media-heading"><a href="#">Media heading, this is a title of a news...</a></h5>
+                                             <p>Fugiat dapibus, tellus ac cursus commodo, ut fermentum...</p>
+                                        </li>
+                                        <li class="media"> <a href="#" class="media-photo" style="background-image:url(images/portfolio/t4-thumb.jpg)"></a> <a href="#" class="media-date">18<span>FEB</span></a>
+                                             <h5 class="media-heading"><a href="#">Media heading, of a news item.</a></h5>
+                                             <p>Fugiat dapibus, tellus ac cursus commodo, condime ntum nibh, ut fermentum...</p>
+                                        </li>
+                                   </ul>
+                              </div>
+                              <div class="footer_teaser pl_flickr_widget col-sm-4 col-md-4" id="latest-flickr-images">
+                                   <h3>FlickrFeed</h3>
+                                   <ul></ul>
+                              </div>
+                         </div>
+                    </div> {% endcomment %}
+               </section>
+               <div class="copyright">
+                    <div class="container">
+                         <div class="row">
+                              <div class="col-sm-4 col-md-4">Copyright ©2020 all rights reserved </div>
+                              <div class="col-sm-4 col-md-4"></div>
+                         </div>
+                    </div>
+               </div>
+          </footer>
+     </div>
+
+
+
+     <script src="{% static "js/jquery-1.10.2.min.js" %}"></script>
+     <script src="{% static "twitter-bootstrap/js/bootstrap.min.js" %}" type="text/javascript"></script>
+     <script type="text/javascript" src="{% static "js/jquery.vide.min.js" %}"> </script>
+     
+     <!--FlexSlider -->
+     <script src="{% static "js/woothemes-FlexSlider-06b12f8/jquery.flexslider-min.js" %}"></script>
+     <!--Isotope Plugin -->
+     <script src="{% static "js/isotope/jquery.isotope.min.js" %}" type="text/javascript"></script>
+     <!--To-Top Button Plugin -->
+     <script type="text/javascript" src="{% static "js/jquery.ui.totop.js" %}"></script>
+     <!--Easing animations Plugin -->
+     <script type="text/javascript" src="{% static "js/easing.js" %}"></script>
+     <!--WOW Reveal on scroll Plugin -->
+     <script type="text/javascript" src="{% static "js/wow.min.js" %}"></script>
+     <!--Simple Text Rotator -->
+     <script type="text/javascript" src="{% static "js/jquery.simple-text-rotator.js" %}"></script>
+     <!--The Theme Required Js -->
+     <script type="text/javascript" src="{% static "js/cleanstart_theme.js"%}"></script>
+     <!--To collapse the menu -->
+     <script type="text/javascript" src="{% static "js/collapser.js" %}"></script>
+     <!--Twitter Feed API -->
+     <script type="text/javascript" src="js/tweetie/tweetie.min.js"></script>
+     
+
+
+
+
+    
+</div>
+</body>
+</html>
