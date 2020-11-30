@@ -31,9 +31,9 @@ with open('/home/dylan814/secret.txt') as f:
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG =  False
+DEBUG =  True
 
-ALLOWED_HOSTS = ['dylan814.pythonanywhere.com']
+ALLOWED_HOSTS = ['www.dylanp.com.au']
 
 
 # Application definition
@@ -135,7 +135,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = "testdylan814@gmail.com"
-EMAIL_HOST_PASSWORD = 'welcome123!' 
+EMAIL_HOST_PASSWORD = 'welcome123!'
 EMAIL_PORT = '587'
 
 
